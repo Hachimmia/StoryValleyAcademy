@@ -1,0 +1,231 @@
+
+  @import "../components/colors";
+  #header {
+      height: 90px;
+      transition: all 0.5s;
+      z-index: 997;
+      transition: all 0.5s;
+      background: $yellow;
+      
+    }
+    
+    #header.header-transparent {
+      background: linear-gradient(
+      to right,
+      rgba(white, 0.95),
+      rgba($yellow, 0.95)
+    );
+    
+    }
+    
+    #header.header-scrolled {
+      background: linear-gradient(
+      to right,
+      rgba(white, 0.95),
+      rgba($yellow, 0.50)
+    );
+    
+    }
+    
+    #header .logo img {
+      padding: 0;
+      margin: 0;
+      max-height: 80px;
+    }
+    
+    /*--------------------------------------------------------------
+    # Navigation Menu
+    --------------------------------------------------------------*/
+    .navbar {
+      padding: 0; 
+    }
+    
+    .navbar ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      list-style: none;
+      align-items: center;
+    }
+    
+    .navbar li {
+      position: relative;
+    }
+    
+    .navbar a,
+    .navbar a:focus {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px 15px 7px 15px;
+      margin-left: 5px;
+      font-size: 20px;
+      color: #fff;
+      white-space: nowrap;
+      transition: 0.3s;
+      border-radius: 50px;
+    }
+    
+    .navbar a i,
+    .navbar a:focus i {
+      font-size: 20px;
+      line-height: 0;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    
+    .navbar a:hover,
+    .navbar .active,
+    .navbar .active:focus,
+    .navbar li:hover>a {
+      background: $red1;
+      
+    }
+
+    //Footer
+    #footer {
+      background: $red1;
+    }
+    #footer p, 
+    #footer a{
+        font-size: 20px;
+        color: white;
+    }
+    #footer h2, h4{
+      color: white;
+    }
+    
+    #footer i {
+      font-size: 30px;
+      line-height: 0;
+      margin-left: 5px;
+      margin-right: 20px;
+    }
+    #footer a:hover {
+      color: $yellow;
+      
+    }
+    .text-align-center{
+        text-align: center;
+    }
+    .bg-copyright{
+      background-color: $grey;
+    }
+    #hero {
+      margin-top: 120px;
+    }
+    #hero .marginvideo{
+      margin-top: 50px;
+    }
+    #hero .player {
+      overflow: hidden;
+      z-index: 1;
+      height: 300px;
+      width: auto;
+      border-radius: 15px;
+      box-shadow: 0px 0px 10px 10px $red1;
+    }
+    #hero .video-container {
+      position: relative; 
+      padding-bottom: 56.25%; 
+      padding-top: 30px; 
+      height: 0; 
+      overflow: hidden; 
+    }
+    .video-container iframe, .video-container object, .video-container embed {
+      position: absolute; 
+      top: 0; 
+      left: 0; 
+      width: 100%; 
+      height: 100%;
+    }
+    #hero p{
+      font-size: 15px;
+    }
+    #hero .hero-home{
+      padding-left: 200px;
+    }
+    //card slider
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500&display=swap");
+
+    .background-home {
+      background-image: url("../../assets/images/flyman.png");
+      background-position: 50% 120%; /* Center the image */
+      background-repeat: no-repeat;
+      background-size: 50%;
+  }
+  @media only screen and (max-width: 1300px) {
+    .background-home{
+      background-position: 50% 250%;
+    }
+  }
+    #hero .bg-text-home {
+      backdrop-filter: blur(10px) saturate(70%);
+      border-radius: 20px;
+    }
+    #cards{
+      margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    }
+    #cards .card {
+      background: #fff;
+      border-radius: 8px;
+    }
+    #cards .name-story{
+      display: flex;
+      align-items: center;
+      column-gap: 12px;
+      padding: 15px;
+    }
+    #cards .name{
+      font-size: 20px;
+      font-weight: 500;
+    }
+    #cards .owner{
+      font-size: 12px;
+      font-weight: 500;
+      color: #4d4d4d;
+    }
+    #cards .card .image-box{
+      height:200px;
+      width: auto;
+    }
+    #cards .card .image-box img{
+      width: 100%;
+      height: 100%;
+      border-radius: 8px 8px 0 0;
+    }
+    #cards .container{
+      max-width: 1120px;
+      width: 100%;
+      padding: 40px 0;
+    }
+    #cards .slide-container{
+      margin: 0 80px;
+      overflow:hidden;
+    }
+    #cards .swiper-navBtn{
+      color:$yellow;
+      height: 40px;
+      width: 40px;
+      background: $grey;
+      border-radius: 50%;
+    }
+    #cards .swiper-navBtn::before,
+    #cards .swiper-navBtn::after{
+      font-size: 20px;
+    }
+    #cards .swiper-pagination{
+      color: $red1;
+    }
+    @media only screen and (max-width: 768px) {
+      .swiper-navBtn{
+        display:none;
+      }
+    }

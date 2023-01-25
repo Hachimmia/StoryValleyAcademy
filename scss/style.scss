@@ -1,0 +1,32 @@
+// @use "../css/w3css/w3.css";
+// Bootstrap with custom variables
+// @use '../node_modules/bootstrap/scss/bootstrap' with (
+//     $h1-font-size: 1.6rem,
+//     $h2-font-size: 1.25rem,
+//     $h3-font-size: 1.2rem,
+//     $h4-font-size: 1.1rem,
+//     $h5-font-size: 1rem,
+//     $h6-font-size: 0.9rem,
+//     $popover-max-width: 600px
+// );
+
+// Bootstrap
+@use "../node_modules/bootstrap/scss/bootstrap" as *;
+
+// Custom
+@use "components" as *;
+@use "pages" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500&display=swap");
+* {
+    //font-family: "Josefin Sans", sans-serif !important;
+    font-family: "Poppins", sans-serif!important;
+}
+.bg-blob {
+    background-image: url("../../assets/images/bg.svg");
+    background-position: center; /* Center the image */
+    background-repeat: repeat; /* Do not repeat the image */
+    background-size: 100vh 100vw; /* Resize the background image to cover the entire container */
+} /*# sourceMappingURL=style.css.map */
+

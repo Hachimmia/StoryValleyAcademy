@@ -1,0 +1,123 @@
+.lesson-pack-hero {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff7676;
+    color: #fff;
+
+    div {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        flex: 1;
+    }
+    .lesson-desc {
+        max-width: 450px;
+    }
+
+    .img-div {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image {
+        max-height: 100%;
+        width: 100%;
+        max-width: 450px;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+        margin-top: 1rem;
+    }
+
+    .categories {
+        margin-top: 0.5rem;
+        span {
+            background-color: #fff;
+            color: #ff7676;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            margin-right: 0.5rem;
+            font-weight: 600;
+        }
+    }
+}
+
+.lesson-pack-section {
+    min-height: 100vh;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lesson-pack-section > div {
+    display: flex;
+    width: 100%;
+    max-width: 530px;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    h3 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: justify;
+    }
+
+    .lesson-resources {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100%;
+        color: #fff;
+
+        .wrapper {
+            background-color: #ff5252;
+            padding: 3rem 3.5rem;
+            border-radius: 4px;
+            min-width: 350px;
+
+            span {
+                font-size: 1rem;
+                font-weight: 600;
+                color: #fff;
+                font-weight: 300;
+            }
+
+            .content-title {
+                font-size: 1rem;
+                font-weight: 400;
+                margin-bottom: 3px;
+            }
+
+            h4 {
+                color: #ffbf5e;
+                padding-bottom: 1rem;
+            }
+
+            ul {
+                margin-bottom: 24px;
+            }
+
+            .resource-btn {
+                background-color: #fff;
+                padding: 0.5rem 1rem;
+                border-radius: 4px;
+                color: #ff5252;
+                font-weight: 600;
+            }
+        }
+    }
+}
